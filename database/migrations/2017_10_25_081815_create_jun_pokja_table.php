@@ -15,6 +15,7 @@ class CreateJunPokjaTable extends Migration
     {
         Schema::create('jun_pokja', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nama_pokja');
             $table->timestamps();
         });
     }
